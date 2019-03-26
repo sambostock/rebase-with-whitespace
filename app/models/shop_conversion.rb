@@ -2,6 +2,7 @@
 
 class ShopConversion < ApplicationRecord
   belongs_to :shop
+  has_many :things
 
   def foo
     true
