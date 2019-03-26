@@ -1,13 +1,16 @@
 # frozen_string_literal: true
 
-class ShopConversion < ApplicationRecord
-  belongs_to :shop
+module Launch
+  class ShopConversion < ApplicationRecord
+    belongs_to :shop
 
-  def foo
-    true
-  end
+    def foo
+      true
+    end
 
-  def bar
-    false
+    def bar
+      false
+    end
   end
+  private_constant :ShopConversion
 end
