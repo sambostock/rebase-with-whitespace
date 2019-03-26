@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+module Launch
 class ShopConversion < ApplicationRecord
   belongs_to :shop
   has_many :things
@@ -11,4 +12,6 @@ class ShopConversion < ApplicationRecord
   def bar
     false
   end
+end
+  private_constant :ShopConversion
 end
